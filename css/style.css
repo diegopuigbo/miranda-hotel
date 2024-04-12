@@ -1385,5 +1385,836 @@ body {
     margin-left: 0;
   }
 }
+.main__details--intro {
+  padding: 2em 1em;
+  background-color: #333;
+}
+.main__details--intro--slogan {
+  color: #FFF;
+  font-family: "Archivo";
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
+}
+.main__details--intro--title {
+  color: #FFF;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 400;
+}
+.main__details--intro--divider {
+  background-color: white;
+  padding: 0.5em;
+  width: fit-content;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  top: 2em;
+  right: -10em;
+}
+.main__details--intro--divider--gold {
+  color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--intro {
+    padding: 10em 20% 3em;
+  }
+  .main__details--intro--divider {
+    top: 3em;
+    left: 95%;
+  }
+}
+.main__details--room {
+  padding: 2em 1em;
+}
+.main__details--room--info--bed {
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+.main__details--room--info--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 3em;
+}
+.main__details--room--info--price--number {
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 2em;
+  font-weight: 700;
+}
+.main__details--room--info--price--night {
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.main__details--room--image {
+  width: 100%;
+  margin: 2em 0;
+}
+.main__details--room--availability {
+  margin-bottom: 3em;
+}
+.main__details--room--availability--subtitle {
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 1em;
+  text-align: center;
+}
+.main__details--room--availability--form {
+  display: flex;
+  flex-direction: column;
+}
+.main__details--room--availability--form--text {
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.main__details--room--availability--form--input {
+  margin-bottom: 1em;
+  border: none;
+  background-color: #F8F8F8;
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 1.5em;
+  margin-right: 2em;
+}
+.main__details--room--availability--form--bt {
+  background-color: #BEAD8E;
+  padding: 1.5em 2em;
+  border: none;
+  color: white;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin-right: 2em;
+}
+.main__details--room--desc {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--room {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .main__details--room--info {
+    display: inline-block;
+    padding: 1em 1em 0;
+    position: relative;
+    top: 2em;
+    width: 60%;
+    background-color: white;
+  }
+  .main__details--room--info--title {
+    display: inline;
+    margin-right: 1em;
+    line-height: normal;
+  }
+  .main__details--room--info--price {
+    display: inline;
+  }
+  .main__details--room--image {
+    width: 70%;
+    margin: 0;
+  }
+  .main__details--room--availability {
+    display: inline-block;
+    width: 20%;
+    margin-left: 3em;
+    position: absolute;
+  }
+  .main__details--room--availability--subtitle {
+    margin: 0 0 1em;
+  }
+  .main__details--room--availability--form--bt {
+    font-size: 0.7em;
+    padding: 1.5em 0.7em;
+  }
+  .main__details--room--desc {
+    width: 70%;
+    margin-top: 2em;
+  }
+}
+.main__details--room--amenities {
+  padding: 2em 1em;
+}
+.main__details--room--amenities--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+.main__details--room--amenities--separator {
+  margin-bottom: 2em;
+}
+.main__details--room--amenities--elements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main__details--room--amenities--elements--element {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--room--amenities {
+    width: 70%;
+    margin: 0 10%;
+  }
+  .main__details--room--amenities--elements {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.main__details--room--person {
+  padding: 2em 1em;
+  text-align: center;
+}
+.main__details--room--person--face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.main__details--room--person--face--img {
+  width: 100%;
+  height: auto;
+}
+.main__details--room--person--tick {
+  position: relative;
+  bottom: 12em;
+  left: 4.5em;
+}
+.main__details--room--person--name {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.9em;
+  font-weight: 400;
+}
+.main__details--room--person--occupation {
+  color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0.5em 0 1.5em;
+}
+.main__details--room--person--desc {
+  padding: 1em 1em;
+  color: #777;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--room--person {
+    width: 21em;
+    margin-left: 10%;
+  }
+}
+.main__details--room--cancellation {
+  padding: 2em 1em;
+}
+.main__details--room--cancellation--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+.main__details--room--cancellation--separator {
+  margin-bottom: 2em;
+}
+.main__details--room--cancellation--desc {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--room--cancellation {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .main__details--room--cancellation--title {
+    margin-bottom: 1em;
+  }
+}
+.main__details--room--related {
+  padding: 2em 1em;
+}
+.main__details--room--related--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+.main__details--room--related--element {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.main__details--room--related--element--slider {
+  padding: 2em 1em;
+}
+.main__details--room--related--element--slider--swiper {
+  width: 100%;
+  height: 200px;
+}
+.main__details--room--related--element--slider--swiper--wrapper--slide--img {
+  width: 100%;
+}
+.main__details--room--related--element--slider--swiper--button {
+  background-color: white;
+  width: 30px !important;
+  height: 30px !important;
+}
+.main__details--room--related--element--slider--swiper--button::after, .main__details--room--related--element--slider--swiper--button::before {
+  color: black;
+  font-size: 1em !important;
+}
+.main__details--room--related--element--slider--swiper--button:hover {
+  background-color: #BDAC8D;
+}
+.main__details--room--related--element--slider--swiper--button:hover::after, .main__details--room--related--element--slider--swiper--button:hover::before {
+  color: white;
+}
+.main__details--room--related--element--icons {
+  position: relative;
+  bottom: 3em;
+  z-index: 10;
+  background: white;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+}
+.main__details--room--related--element--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+}
+.main__details--room--related--element--desc {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.main__details--room--related--element--price {
+  display: inline;
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+}
+.main__details--room--related--element--book {
+  display: inline;
+  color: #BDBDBD;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__details--room--related {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .main__details--room--related--separator {
+    width: 70%;
+  }
+  .main__details--room--related--element {
+    width: 21em;
+  }
+}
+.main__offers--intro {
+  padding: 2em 1em;
+  background-color: #333;
+}
+.main__offers--intro--slogan {
+  color: #FFF;
+  font-family: "Archivo";
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
+}
+.main__offers--intro--title {
+  color: #FFF;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 400;
+}
+.main__offers--intro--divider {
+  background-color: white;
+  padding: 0.5em;
+  width: fit-content;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  top: 2em;
+  right: -10em;
+}
+.main__offers--intro--divider--gold {
+  color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__offers--intro {
+    padding: 8em 20% 2em;
+  }
+  .main__offers--intro--divider {
+    top: 2em;
+    left: 95%;
+  }
+}
+.main__offers--elements {
+  padding: 2em 1em;
+}
+.main__offers--elements--room {
+  margin-bottom: 2em;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.main__offers--elements--room--image {
+  width: 100%;
+}
+.main__offers--elements--room--prices {
+  width: fit-content;
+  position: relative;
+  bottom: 5em;
+  float: right;
+  margin-right: 2em;
+}
+.main__offers--elements--room--prices--price-old {
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration-line: line-through;
+}
+.main__offers--elements--room--prices--price-old--night {
+  font-size: 0.5em;
+  text-decoration-line: line-through;
+}
+.main__offers--elements--room--prices--price-new {
+  color: #DE5777;
+  font-family: "Archivo";
+  font-size: 1.9em;
+  font-weight: 700;
+}
+.main__offers--elements--room--prices--price-new--night {
+  font-size: 0.6em;
+}
+.main__offers--elements--room--data {
+  padding: 0 1em;
+}
+.main__offers--elements--room--data--info {
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.main__offers--elements--room--data--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.main__offers--elements--room--data--separator {
+  display: none;
+}
+.main__offers--elements--room--data--content--desc {
+  margin: 1em 0;
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.main__offers--elements--room--data--content--amenities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main__offers--elements--room--data--content--amenities--element {
+  margin-top: 1em;
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.main__offers--elements--room--data--bt {
+  margin: 2em auto;
+  background-color: #BEAD8E;
+  padding: 1.5em 2em;
+  width: 60%;
+  border: none;
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__offers--elements {
+    margin: 0 20%;
+  }
+  .main__offers--elements--room--prices {
+    z-index: 10;
+    right: 3em;
+    margin-left: 2em;
+    bottom: 6em;
+  }
+  .main__offers--elements--room--image {
+    height: 30em;
+  }
+  .main__offers--elements--room--data {
+    margin: 0 4em;
+    padding: 2em 2em 0;
+    position: relative;
+    bottom: 8em;
+    background-color: white;
+    border-top: 5px solid #BDAC8D;
+  }
+  .main__offers--elements--room--data--separator {
+    display: block;
+  }
+  .main__offers--elements--room--data--content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__offers--elements--room--data--content--desc {
+    width: 45%;
+  }
+  .main__offers--elements--room--data--content--amenities {
+    width: 40%;
+  }
+  .main__offers--elements--room--data--bt {
+    width: auto;
+    padding: 1.5em 4em;
+  }
+}
+.main__offers--popular {
+  padding: 2em 1em;
+  background-color: #222;
+  text-align: center;
+}
+.main__offers--popular--info {
+  color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+.main__offers--popular--title {
+  color: #FFF;
+  font-family: "Old Standard TT";
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 3em;
+}
+.main__offers--popular--room {
+  text-align: center;
+  margin-bottom: 3em;
+  background-color: white;
+  padding-bottom: 2em;
+}
+.main__offers--popular--room--slider--swiper {
+  width: 100%;
+  height: 200px;
+}
+.main__offers--popular--room--slider--swiper--wrapper--slide--img {
+  width: 100%;
+}
+.main__offers--popular--room--slider--swiper--button {
+  background-color: white;
+  width: 30px !important;
+  height: 30px !important;
+}
+.main__offers--popular--room--slider--swiper--button::after, .main__offers--popular--room--slider--swiper--button::before {
+  color: black;
+  font-size: 1em !important;
+}
+.main__offers--popular--room--slider--swiper--button:hover {
+  background-color: #BDAC8D;
+}
+.main__offers--popular--room--slider--swiper--button:hover::after, .main__offers--popular--room--slider--swiper--button:hover::before {
+  color: white;
+}
+.main__offers--popular--room--image {
+  width: 100%;
+}
+.main__offers--popular--room--icons {
+  position: relative;
+  bottom: 1em;
+  z-index: 10;
+  background: white;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+}
+.main__offers--popular--room--title {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+}
+.main__offers--popular--room--desc {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.main__offers--popular--room--price {
+  display: inline;
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+}
+.main__offers--popular--room--book {
+  display: inline;
+  color: #BDBDBD;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__offers--popular--room {
+    width: 21em;
+    margin: 5% auto;
+  }
+}
+.main__contact--intro {
+  padding: 2em 1em;
+  background-color: #333;
+  margin-bottom: 2em;
+}
+.main__contact--intro--slogan {
+  color: #FFF;
+  font-family: "Archivo";
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
+}
+.main__contact--intro--title {
+  color: #FFF;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 400;
+}
+.main__contact--intro--divider {
+  background-color: white;
+  padding: 1.5em;
+  width: fit-content;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  top: 3em;
+  left: 60%;
+}
+.main__contact--intro--divider--gold {
+  color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__contact--intro {
+    padding: 10em 20% 0;
+  }
+  .main__contact--intro--divider {
+    top: 0;
+    left: 95%;
+  }
+}
+.main__contact--forms {
+  padding: 2em 1em;
+}
+.main__contact--forms--element {
+  display: flex;
+}
+.main__contact--forms--element--icon {
+  align-self: flex-start;
+}
+.main__contact--forms--element--data {
+  margin-left: 1em;
+  position: absolute;
+  left: 5em;
+}
+.main__contact--forms--element--data--key {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.main__contact--forms--element--data--value {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.main__contact--forms--element--number {
+  color: #F8F8F8;
+  font-family: "Roboto";
+  font-size: 200px;
+  font-weight: 700;
+  position: relative;
+  right: -0.4em;
+  bottom: 0.3em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__contact--forms {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__contact--forms--element--icon {
+    align-self: flex-start;
+  }
+  .main__contact--forms--element--data {
+    position: relative;
+    left: -13em;
+  }
+  .main__contact--forms--element--data--key {
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+  .main__contact--forms--element--data--value {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+}
+.main__contact--map {
+  width: calc(100% - 2em);
+  margin: 1em;
+  height: auto;
+  border: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__contact--map {
+    width: 80%;
+    margin: 0 10%;
+    height: 50em;
+    border: 0;
+  }
+}
+.main__contact--data {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  justify-content: space-around;
+}
+.main__contact--data--element {
+  margin-bottom: 1em;
+  border: none;
+  background-color: #F8F8F8;
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 1.5em;
+}
+.main__contact--data--element--textarea {
+  margin-bottom: 1em;
+  border: none;
+  background-color: #F8F8F8;
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 1.5em;
+}
+.main__contact--data--send {
+  background-color: #BEAD8E;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin: 0 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__contact--data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2em;
+    margin: auto 25%;
+  }
+  .main__contact--data--element {
+    margin: 0;
+    grid-row: span 1;
+  }
+  .main__contact--data--element--textarea {
+    grid-column: span 2;
+  }
+  .main__contact--data--send {
+    grid-column: span 2;
+    width: 25%;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
